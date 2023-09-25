@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Student Details</title>
+    </head>
+    <body>
+        {{ student }}
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>First_Name</th>
+                <th>Last_Name</th>
+                <th>Marks</th>
+                <th>Department</th>
+            </tr>
+            {% for x in student %}
+            <tr>
+                <td>{{x}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
